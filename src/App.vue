@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div v-for="item in svgIcons" :key="item" class="icon-item">
-      <svg-icon :icon-class="item" class-name="svg-ysx"/>
+      <svg-icon :icon-class="item" class-name="svg-ysx" class="svg-ooo"/>
       <span>{{ item }}</span>
     </div>
   </div>
@@ -19,3 +19,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.icon-item{
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.svg-ooo:hover{
+  background-color: aliceblue;
+}
+</style>

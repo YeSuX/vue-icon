@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "svg-sprite-loader": "^6.0.9",
+    "svgo-loader": "^3.0.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
