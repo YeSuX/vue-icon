@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <svg-icon></svg-icon>
+    <div v-for="item in svgIcons" :key="item" class="icon-item">
+      <svg-icon :icon-class="item" class-name="svg-ysx"/>
+      <span>{{ item }}</span>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App',
+import svgIcons from "./svg-icon";
 
-}
+export default {
+  name: "App",
+  data() {
+    return {
+      svgIcons,
+    };
+  },
+};
 </script>
