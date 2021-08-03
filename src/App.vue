@@ -28,5 +28,11 @@ export default {
 }
 .svg-ooo:hover{
   background-color: aliceblue;
+  fill: red;
+  transition: all 0.5s;
+}
+
+.svg-ooo{
+  fill: blue;
 }
 </style>

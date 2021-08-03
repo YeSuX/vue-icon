@@ -49,11 +49,12 @@ module.exports = {
       .loader('svgo-loader')
       .tap(options => ({
         ...options,
-        plugins: [{
-          removeAttrs: {
+        plugins: extendDefaultPlugins([{
+          name: 'removeAttrs',
+          params: {
             attrs: 'fill'
           }
-        }]
+        }])
       }))
       .end()
   }
